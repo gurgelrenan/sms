@@ -1,5 +1,5 @@
 require 'dotenv/load'
-require 'aws-sdk'
+require 'aws-sdk-sns'
 
 sns = Aws::SNS::Client.new(region: ENV['REGION'],
                            access_key_id: ENV['AWS_ACCESS_KEY_ID'],
